@@ -18,12 +18,13 @@ Node* getIntersectionNode(Node* headA, Node* headB) {
     Node* a = headA;
     Node* b = headB;
 
-    while (a != b) {
+    while (a != b) {   // searches for same address as a and b are pointers
         a = (a == NULL) ? headB : a->next;
         b = (b == NULL) ? headA : b->next;
     }
     return a;  // either intersection node OR NULL
 }
+
 int main() {
     // Shared part
     Node* intersect = new Node(8);

@@ -15,8 +15,8 @@ int main(){
                 int x;
                 cin>>x;
                 if(i==j) arr[i]=x;
-                else if(i==j+1) arr[n+i-1]=x;
-                else if(i==j-1) arr[2*n+i-1]=x;
+                else if(i==j+1) arr[n-1+i]=x;
+                else if(i==j-1) arr[2*n-1+i]=x;
             }
         }
 
