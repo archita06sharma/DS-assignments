@@ -11,3 +11,4 @@ public:
         next = prev = up = down = NULL;
     }
 };
+

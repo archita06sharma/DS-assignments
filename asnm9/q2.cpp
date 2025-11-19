@@ -97,7 +97,7 @@ Node* inorderPredecessor(Node* root,Node* node){
     }
 
     Node* pred=NULL;
-    while(root!=NULL){
+    while(root!=NULL){ // when root is null means no tree then return null ..... 
         if(node->data > root->data){
             pred=root;
             root=root->right;
@@ -129,10 +129,10 @@ int main(){
 
     int key =10;
     Node* res1 = searchRecursive(root,key);
-    cout << "Search (Recursive): "<< (res1 ? "Found" : "Not Found") << endl;
+    cout << "Search (Recursive): "<< (res1) ? (cout<<"Found"<<res1->data) : (cout<<"Not Found") << endl;
 
     Node* res2 = searchIterative(root, key);
-    cout << "Search (Iterative): "<< (res2 ? "Found" : "Not Found") << endl;
+    cout << "Search (Iterative): "<< (res2 )? (cout<<"Found"<<res1->data) : (cout<<"Not Found") << endl;
 
     //b) maximum element
     cout<<"Maximum element : "<<findMax(root)->data<<endl;
